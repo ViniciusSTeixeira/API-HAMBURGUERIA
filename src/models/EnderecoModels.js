@@ -1,13 +1,13 @@
 const sequelize = require("../database/conectar.js");
 const { DataTypes } = require("sequelize");
 
-const Endereco = sequelize.define("ENDEREÇOS", {
+const Endereco = sequelize.define("ENDERECO", {
   pais: {
     type: DataTypes.STRING,
     allowNull: false,
     validate: {
       isAlpha: {
-        msg: "Permitido apenas letras",
+        msg: "pais",
       },
     },
   },
@@ -15,21 +15,21 @@ const Endereco = sequelize.define("ENDEREÇOS", {
   estado: {
     type: DataTypes.STRING,
     allowNull: false,
-    validate: {
+    /* validate: {
       isAlpha: {
-        msg: "Permitido apenas letras",
+        msg: "estado",
       },
-    },
+    }, */
   },
 
   cidade: {
     type: DataTypes.STRING,
     allowNull: false,
-    validate: {
+    /* validate: {
       isAlpha: {
-        msg: "Permitido apenas letras",
+        msg: "cidade",
       },
-    },
+    }, */
   },
 
   bairro: {
@@ -37,19 +37,21 @@ const Endereco = sequelize.define("ENDEREÇOS", {
     allowNull: false,
     validate: {
       isAlpha: {
-        msg: "Permitido apenas letras",
+        msg: "bairro",
       },
     },
   },
+
   rua: {
     type: DataTypes.STRING,
     allowNull: false,
     validate: {
       isAlpha: {
-        msg: "Permitido apenas letras",
+        msg: "rua",
       },
     },
   },
+
   cep: {
     type: DataTypes.NUMBER,
     allowNull: false,
@@ -59,6 +61,7 @@ const Endereco = sequelize.define("ENDEREÇOS", {
       },
     },
   },
+
   numero: {
     type: DataTypes.NUMBER,
     allowNull: false,
@@ -68,14 +71,15 @@ const Endereco = sequelize.define("ENDEREÇOS", {
       },
     },
   },
+  
   complemento: {
     type: DataTypes.STRING,
     allowNull: false,
-    validate: {
-      isAlphanumeric: {
-        msg: "",
+    /* validate: {
+      isAlpha: {
+        msg: "digite o complemento",
       },
-    },
+    }, */
   },
 });
 
