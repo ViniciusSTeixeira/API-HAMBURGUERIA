@@ -103,7 +103,7 @@ class EnderecoController {
         .status(400)
         .json({ status: 400, message: "Endereço não encontrado" });
     }
-    console.log({});
+   
   }
 
   //UPDATE
