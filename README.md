@@ -19,7 +19,7 @@
 
 ### Instalando e rodando o projeto:
 
-Você precisará instalar em sua máquina as seguintes ferramentas:
+Você precisará instalar em sua máquina as seguintes ferramentas: <br>
 ✔[Git](https://git-scm.com) <br>
 ✔[Node.js](https://nodejs.org/en/) <br>
 ✔[Insomnia](https://insomnia.rest/download) <br>  
