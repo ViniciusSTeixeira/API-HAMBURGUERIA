@@ -6,7 +6,9 @@ const Endereco = sequelize.define("ENDERECO", {
     type: DataTypes.TEXT,
     allowNull: false,
     validate: {
-      notEmpty: true,
+      notEmpty: {
+        msg: "O campo pais deve ser preenchido",
+      },
       is: {
         args: /^([A-Za-z\u00C0-\u00D6\u00D8-\u00f6\u00f8-\u00ff\s]*)$/g,
       },
@@ -58,7 +60,9 @@ const Endereco = sequelize.define("ENDERECO", {
     type: DataTypes.TEXT,
     allowNull: false,
     validate: {
-      notEmpty: true,
+      notEmpty:{
+        msg: 'O campo rua deve ser preenchido'
+      },
     },
   },
 

@@ -47,13 +47,13 @@ class EnderecoController {
       cidade: req.body.cidade,
       bairro: req.body.bairro,
       rua: req.body.rua,
-      cep: parseInt(req.body.cep),
-      numero: parseInt(req.body.numero),
+      cep: req.body.cep,
+      numero: req.body.numero,
       
     };
      
     const enderecoExistente = await EnderecoModels.findOne({
-      where: { numero: parseInt(req.body.numero) },
+      where: { numero: req.body.numero },
     }); 
 
      if (enderecoExistente) {
@@ -73,7 +73,7 @@ class EnderecoController {
     } catch (error) {
       return res.status(400).json({
         status: 400,
-        message: "Todos os campos devem ser preenchidos",
+        message:`${error}`
       });
     }
   }
@@ -113,8 +113,8 @@ class EnderecoController {
       cidade: req.body.cidade,
       bairro: req.body.bairro,
       rua: req.body.rua,
-      cep: parseInt(req.body.cep),
-      numero: parseInt(req.body.numero),
+      cep: req.body.cep,
+      numero: req.body.numero,
       
     };
     const endereco = await EnderecoModels.findOne({
