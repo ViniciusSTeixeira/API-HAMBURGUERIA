@@ -101,4 +101,4 @@ Foi adicionada as seguintes validações para os dados recebidos nas requisiçõ
 - O campo "cep" deverá receber 8 números<br>
 - O campo "numero" deverá receber somente numeros inteiros<br><br>
 
-<p><img src="./readme/burger-dance.gif" alt="hamburger-dance-Gif" width=""></p>
+<p align="center"><img src="./readme/burger-dance.gif" alt="hamburger-dance-Gif" width=""></p>
