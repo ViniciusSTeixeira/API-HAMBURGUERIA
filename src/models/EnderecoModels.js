@@ -60,8 +60,8 @@ const Endereco = sequelize.define("ENDERECO", {
     type: DataTypes.TEXT,
     allowNull: false,
     validate: {
-      notEmpty:{
-        msg: 'O campo rua deve ser preenchido'
+      notEmpty: {
+        msg: "O campo rua deve ser preenchido",
       },
     },
   },
@@ -95,8 +95,6 @@ const Endereco = sequelize.define("ENDERECO", {
       },
     },
   },
-
-  
 });
 
 module.exports = Endereco;

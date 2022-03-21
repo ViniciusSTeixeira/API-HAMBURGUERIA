@@ -14,6 +14,7 @@ class EnderecoController {
         menssagem: error.menssagem,
       });
     }
+    console.log({ mostraTodos });
   }
 
   // GET específico
@@ -37,6 +38,7 @@ class EnderecoController {
         menssagem: error.menssagem,
       });
     }
+    console.log({ mostrarPorId });
   }
 
   //CRIAR
@@ -49,21 +51,19 @@ class EnderecoController {
       rua: req.body.rua,
       cep: req.body.cep,
       numero: req.body.numero,
-      
     };
-     
+
     const enderecoExistente = await EnderecoModels.findOne({
       where: { numero: req.body.numero },
-    }); 
+    });
 
-     if (enderecoExistente) {
+    if (enderecoExistente) {
       return res.status(400).json({
         status: 400,
         menssagem: "Endereço existente",
       });
-    } 
+    }
 
-     
     try {
       await EnderecoModels.create(novoEndereco);
       res.status(200).json({
@@ -73,9 +73,10 @@ class EnderecoController {
     } catch (error) {
       return res.status(400).json({
         status: 400,
-        message:`${error}`
+        message: `${error}`,
       });
     }
+    console.log({ novoEndereco });
   }
 
   //DELETAR
@@ -100,8 +101,9 @@ class EnderecoController {
     } catch (error) {
       return res
         .status(400)
-        .json({ status: 400, message: 'Endereço não encontrado' });
+        .json({ status: 400, message: "Endereço não encontrado" });
     }
+    console.log({});
   }
 
   //UPDATE
@@ -115,7 +117,6 @@ class EnderecoController {
       rua: req.body.rua,
       cep: req.body.cep,
       numero: req.body.numero,
-      
     };
     const endereco = await EnderecoModels.findOne({
       where: { id: id },
@@ -128,11 +129,12 @@ class EnderecoController {
         status: 200,
         menssagem: "Endereço atualizado com sucesso",
       });
-    }  catch (error) {
+    } catch (error) {
       return res
-         .status(400)
-        .json({ status: 400,  message: 'endereço não encontrado'}); 
-  }
+        .status(400)
+        .json({ status: 400, message: "endereço não encontrado" });
+    }
+    console.log(atualizaEndereco);
   }
 }
 
