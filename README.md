@@ -22,7 +22,7 @@
 Você precisará instalar em sua máquina as seguintes ferramentas: <br>
 ✔[Git](https://git-scm.com) <br>
 ✔[Node.js](https://nodejs.org/en/) <br>
-✔[Insomnia](https://insomnia.rest/download) <br>  
+✔[Insomnia](https://insomnia.rest/download)
 ✔[VSCode](https://code.visualstudio.com/) <br>
 
 O repositório se encontra no seguinte endereço: https://github.com/ViniciusSTeixeira/API-HAMBURGUERIA
