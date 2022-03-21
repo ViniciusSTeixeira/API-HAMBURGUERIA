@@ -5,7 +5,7 @@ class EnderecoController {
   static async mostraTodos(req, res) {
     try {
       const endereco = await EnderecoModels.findAll({
-        attributes: { exclude: ["createdAt", "updateAt"] },
+        attributes: { exclude: ["createdAt", "updatedAt"] },
       });
       return res.status(200).json({ resultado: endereco });
     } catch (error) {
@@ -22,12 +22,12 @@ class EnderecoController {
 
     try {
       const endereco = await EnderecoModels.findByPk(id, {
-        attributes: { exclude: ["createdAt", "updateAt"] },
+        attributes: { exclude: ["createdAt", "updatedAt"] },
       });
       if (!endereco) {
         return res.status(400).json({
           status: 400,
-          menssagem: "endereço nao encontrado",
+          menssagem: "endereço não encontrado",
         });
       }
       return res.status(200).json({ endereco: endereco });
@@ -49,47 +49,21 @@ class EnderecoController {
       rua: req.body.rua,
       cep: parseInt(req.body.cep),
       numero: parseInt(req.body.numero),
-      complemento: req.body.complemento,
+      
     };
-
-    /*  if (
-      !pais ||
-      !estado ||
-      !cidade ||
-      !bairro ||
-      !rua ||
-      !cep ||
-      !numero ||
-      !complemento
-    ) {
-      return res.status(400).json({
-        status: 400,
-        menssagem: "Todos os campos devem ser preenchidos",
-      });
-    }
-
+     
     const enderecoExistente = await EnderecoModels.findOne({
-      where: { rua: rua },
-    }); */
+      where: { numero: parseInt(req.body.numero) },
+    }); 
 
-    /* if (enderecoExistente) {
+     if (enderecoExistente) {
       return res.status(400).json({
         status: 400,
         menssagem: "Endereço existente",
       });
-    } */
+    } 
 
-    /*   const novoEndereco = {
-      pais,
-      estado,
-      cidade,
-      bairro,
-      rua,
-      cep,
-      numero,
-      complemento,
-    }; */
-
+     
     try {
       await EnderecoModels.create(novoEndereco);
       res.status(200).json({
@@ -97,9 +71,10 @@ class EnderecoController {
         menssagem: "Endereço cadastrado com sucesso",
       });
     } catch (error) {
-      return res
-        .status(400)
-        .json({ status: 400, message: `Algo deu errado: ${error}` });
+      return res.status(400).json({
+        status: 400,
+        message: "Todos os campos devem ser preenchidos",
+      });
     }
   }
 
@@ -113,7 +88,7 @@ class EnderecoController {
     if (!endereco) {
       return res.status(400).json({
         status: 400,
-        menssagem: "Endereço não foi encontrado",
+        menssagem: "Endereço não encontrado",
       });
     }
     try {
@@ -125,7 +100,7 @@ class EnderecoController {
     } catch (error) {
       return res
         .status(400)
-        .json({ status: 400, message: `Algo deu errado: ${error}` });
+        .json({ status: 400, message: 'Endereço não encontrado' });
     }
   }
 
@@ -140,39 +115,24 @@ class EnderecoController {
       rua: req.body.rua,
       cep: parseInt(req.body.cep),
       numero: parseInt(req.body.numero),
-      complemento: req.body.complemento,
+      
     };
     const endereco = await EnderecoModels.findOne({
       where: { id: id },
       raw: true,
     });
-    /* if (!endereco) {
-      return res.status(400).json({
-        status: 400,
-        menssagem: "Endereço não foi encontrado",
-      });
-    } */
-    /* const dadosAtualizados = {
-      pais,
-      estado,
-      cidade,
-      bairro,
-      rua,
-      cep,
-      numero,
-      complemento,
-    }; */
+
     try {
       await EnderecoModels.update(atualizaEndereco, { where: endereco });
       return res.status(200).json({
         status: 200,
         menssagem: "Endereço atualizado com sucesso",
       });
-    } catch (error) {
+    }  catch (error) {
       return res
-        .status(400)
-        .json({ status: 400, message: `Algo deu errado: ${error}` });
-    }
+         .status(400)
+        .json({ status: 400,  message: 'endereço não encontrado'}); 
+  }
   }
 }
 

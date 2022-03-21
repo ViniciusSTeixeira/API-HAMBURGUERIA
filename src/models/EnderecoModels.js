@@ -3,11 +3,12 @@ const { DataTypes } = require("sequelize");
 
 const Endereco = sequelize.define("ENDERECO", {
   pais: {
-    type: DataTypes.STRING,
+    type: DataTypes.TEXT,
     allowNull: false,
     validate: {
-      isAlpha: {
-        msg: "pais",
+      notEmpty: true,
+      is: {
+        args: /^([A-Za-z\u00C0-\u00D6\u00D8-\u00f6\u00f8-\u00ff\s]*)$/g,
       },
     },
   },
@@ -15,40 +16,49 @@ const Endereco = sequelize.define("ENDERECO", {
   estado: {
     type: DataTypes.STRING,
     allowNull: false,
-    /* validate: {
-      isAlpha: {
-        msg: "estado",
+    validate: {
+      notEmpty: {
+        msg: "O campo estado deve ser preenchido",
       },
-    }, */
+      is: {
+        args: /^([A-Za-z\u00C0-\u00D6\u00D8-\u00f6\u00f8-\u00ff\s]*)$/g,
+      },
+    },
   },
 
   cidade: {
     type: DataTypes.STRING,
     allowNull: false,
-    /* validate: {
-      isAlpha: {
-        msg: "cidade",
+    validate: {
+      notEmpty: {
+        msg: "O campo cidade deve ser preenchido",
       },
-    }, */
+      is: {
+        args: /^([A-Za-z\u00C0-\u00D6\u00D8-\u00f6\u00f8-\u00ff\s]*)$/g,
+        msg: "CIDADE",
+      },
+    },
   },
 
   bairro: {
     type: DataTypes.STRING,
     allowNull: false,
     validate: {
-      isAlpha: {
-        msg: "bairro",
+      notEmpty: {
+        msg: "O campo Bairro deve ser preenchido",
+      },
+      is: {
+        args: /^([A-Za-z\u00C0-\u00D6\u00D8-\u00f6\u00f8-\u00ff\s]*)$/g,
+        msg: "BAIRRO",
       },
     },
   },
 
   rua: {
-    type: DataTypes.STRING,
+    type: DataTypes.TEXT,
     allowNull: false,
     validate: {
-      isAlpha: {
-        msg: "rua",
-      },
+      notEmpty: true,
     },
   },
 
@@ -56,8 +66,15 @@ const Endereco = sequelize.define("ENDERECO", {
     type: DataTypes.NUMBER,
     allowNull: false,
     validate: {
-      isAlphanumeric: {
-        msg: "Permitido apenas números",
+      notEmpty: {
+        msg: "O campo CEP deve ser preenchido",
+      },
+      isNumeric: {
+        msg: "O campo CEP deve conter somente números",
+      },
+      len: {
+        args: [8],
+        msg: "Este campo deve conter 8 dígitos",
       },
     },
   },
@@ -66,21 +83,16 @@ const Endereco = sequelize.define("ENDERECO", {
     type: DataTypes.NUMBER,
     allowNull: false,
     validate: {
-      isAlphanumeric: {
-        msg: "Permitido apenas números",
+      notEmpty: {
+        msg: "O campo número deve ser preenchido",
+      },
+      isNumeric: {
+        msg: "O campo número deve conter somente números",
       },
     },
   },
+
   
-  complemento: {
-    type: DataTypes.STRING,
-    allowNull: false,
-    /* validate: {
-      isAlpha: {
-        msg: "digite o complemento",
-      },
-    }, */
-  },
 });
 
 module.exports = Endereco;
