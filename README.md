@@ -48,7 +48,11 @@ Nesta API poderemos: criar, listar, atualizar e deletar Endereços.
 
 <b>[GET] </b> /Endereco - A rota exibirá todos endereços cadastrados<br>
 
+===
+
 <b>[GET] </b> /Endereco/:id - A rota exibirá o endereço baseado em seu ID.<br>
+
+===
 
 <b>[POST] </b> /Endereco/criar - A rota criará um novo endereço com base nas informações passadas no corpo da requisição.<br>
 
@@ -67,16 +71,22 @@ Nesta API poderemos: criar, listar, atualizar e deletar Endereços.
 <h4>Observações:</h4>
  ✔ será gerado automaticamente um campo chamado ID no arquivo (database.sqlite) para realização do CRUD.
 
+===
+
 <b>[PUT] </b> /Endereco/:id - A rota atualizará um Endereço com as informações passadas no corpo da requisição<br>
 
 <h4>Observações:</h4>
  ✔ Você poderar alterar o campo que achar necessário no endereço.
  ✔ O ID se encontra no arquivo (database.sqlite) ou será exibido quando efetuar um GET.
 
+===
+
 <b>[DELETE] </b> /Endereco/:id - A rota deletará um quarto baseado em seu ID.<br>
 
 <h4>Observações:</h4>
  ✔ O ID se encontra no arquivo (database.sqlite) ou será exibido quando efetuar um GET.
+
+===
 
 # Validação de dados
 
