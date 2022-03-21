@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-    <img src="./readme/hamburguer.jpg" alt="hamburguer" width="150">
+    <img src="./readme/hamburguer.jpg" alt="hamburguer" width="500">
 
   <h1 align="center">API REST - HAMBURGUERIA</h>
  <br/>
