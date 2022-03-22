@@ -35,10 +35,10 @@ Nesta API poderemos: criar, listar, atualizar e deletar Endereços.
 
 # Conhecimentos Praticados
 <p align="center" justify-content-between>
-<img src="./readme/58482ee4cef1014c0b5e4a75.png" alt="Logo" width="200">
+<img src="./readme/58482ee4cef1014c0b5e4a75.png" alt="Logo" width="50">
 <img src="./readme/imgbin_sqlite-database-android-mysql-png.png" alt="Logo" width="200">
 <img src="./readme/node-js.png" alt="Logo" width="200">
-<img src="./readme/pngwing.com.png" alt="Logo" width="200">
+<img src="./readme/pngwing.com.png" alt="Logo" width="50">
 </p>
 
 # Rotas da aplicação:
