@@ -4,7 +4,7 @@
 
   <h1 align="center">API REST - Hamburgueria</h1>
  <br />
-  <p align="center">Sumário<p align="center">
+  <p align="center">SUMÁRIO<p align="center">
   <a href="#pré-requisitos">Pré-requisitos</a> |
   <a href="#sobre"> Sobre </a> |
   <a href="#conhecimentos-praticados"> Conhecimentos praticados </a> |
