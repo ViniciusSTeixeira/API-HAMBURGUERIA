@@ -34,13 +34,12 @@ Projeto de fim de Módulo da RESILIA que tem como objetivo criar uma API REST Ba
 Nesta API poderemos: criar, listar, atualizar e deletar Endereços.
 
 # Conhecimentos Praticados
-
-✔ NodeJs <br>
-✔ Express <br>
-✔ SQLite3 <br>
-✔ Sequelize <br>
-✔ CRUD com Sequelize <br>
-✔ Padrão MVC
+<p align="center" justify-content-between>
+<img src="./readme/58482ee4cef1014c0b5e4a75.png" alt="Logo" width="200">
+<img src="./readme/imgbin_sqlite-database-android-mysql-png.png" alt="Logo" width="800">
+<img src="./readme/node-js.png" alt="Logo" width="800">
+<img src="./readme/pngwing.com.png" alt="Logo" width="800">
+</p>
 
 # Rotas da aplicação:
 
