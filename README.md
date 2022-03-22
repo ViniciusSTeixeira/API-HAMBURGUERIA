@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-    <img src="./readme/hamburguer.jpg" alt="Logo" width="800">
+    <img src="./readme/bfb85a3f88168ed6c5eaf931e6831f76.gif" alt="Logo" width="800">
 
   <h1 align="center">API Hotel com Node, Express, Sequelize e SQLite</h1>
  <br />
