@@ -1,13 +1,9 @@
 <br />
 <p align="center">
- 
+    <img src="./readme/1009010462-preview.mp4" alt="Logo" width="800">
 
-    <img src="./readme/hamburguer.jpg" alt="hamburguer" width="800">
-
-
-
-  <h1 align="center">API REST - HAMBURGUERIA</h>
- <br/>
+  <h1 align="center">API Hotel com Node, Express, Sequelize e SQLite</h1>
+ <br />
   <p align="center">Sumário<p align="center">
   <a href="#pré-requisitos">Pré-requisitos</a> |
   <a href="#sobre"> Sobre </a> |
