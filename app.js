@@ -12,7 +12,7 @@ const models = require('./src/models/EnderecoModels.js');/* conexão com models 
 
 const enderecoRouter = require('./src/routers/enderecoRotas.js'); /* conexão com as rotas */
 
-app.use('/Endereco', enderecoRouter); /* ROTA */
+app.use('/endereco', enderecoRouter); /* ROTA */
 
 app.get("/teste", (req, res) => {
   return res.status(200).json({ menssagem: "servidor funcionando" });
