@@ -23,7 +23,7 @@ class EnderecoController {
 
     try {
       const endereco = await EnderecoModels.findByPk(id, {
-        attributes: { exclude: ["createdAt", "updatedAt"] },
+        attributes: { exclude: [ "createdAt", "updatedAt" ] },
       });
       if (!endereco) {
         return res.status(400).json({
