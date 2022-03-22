@@ -3,8 +3,8 @@ const express = require("express");
 const app = express();
 
 app.use(express.json());
-
-const port = 3003;
+require("dotenv-safe/config.js");
+const port = process.env.PORT || 3003;
 
 const sequelize = require("./src/database/conectar.js"); /*conexão com o banco*/
 
