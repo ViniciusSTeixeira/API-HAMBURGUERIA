@@ -1,10 +1,10 @@
 <br />
 <p align="center">
-<<<<<<< HEAD
+
     <img src="./readme/1009010462-preview.mp4" alt="hamburguer" width="500">
-=======
-    <img src="./readme/hamburguer.jpg" alt="hamburguer" width="800">
->>>>>>> e2c1ae6493d7c9ca6f3939abb53a813b635de3a3
+
+
+
 
   <h1 align="center">API REST - HAMBURGUERIA</h>
  <br/>
