@@ -1,6 +1,10 @@
 <br />
 <p align="center">
+<<<<<<< HEAD
     <img src="./readme/1009010462-preview.mp4" alt="hamburguer" width="500">
+=======
+    <img src="./readme/hamburguer.jpg" alt="hamburguer" width="800">
+>>>>>>> e2c1ae6493d7c9ca6f3939abb53a813b635de3a3
 
   <h1 align="center">API REST - HAMBURGUERIA</h>
  <br/>
@@ -76,7 +80,7 @@ ________________________________________________________________________________
 <b>[PUT] </b> /Endereco/:id - A rota atualizará um Endereço com as informações passadas no corpo da requisição<br>
 
 <h4>Observações:</h4>
- ✔ Você poderar alterar o campo que achar necessário no endereço.
+ ✔ Você poderar alterar o campo que achar necessário no endereço.<br>
  ✔ O ID se encontra no arquivo (database.sqlite) ou será exibido quando efetuar um GET.
 
 ________________________________________________________________________________________________________________
