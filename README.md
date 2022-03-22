@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-    <img src="./readme/hamburguer.jpg" alt="hamburguer" width="150">
+    <img src="./readme/hamburguer.jpg" alt="hamburguer" width="500">
 
   <h1 align="center">API REST - HAMBURGUERIA</h>
  <br/>
@@ -22,7 +22,7 @@
 Você precisará instalar em sua máquina as seguintes ferramentas: <br>
 ✔[Git](https://git-scm.com) <br>
 ✔[Node.js](https://nodejs.org/en/) <br>
-✔[Insomnia](https://insomnia.rest/download) <br>  
+✔[Insomnia](https://insomnia.rest/download) <br>
 ✔[VSCode](https://code.visualstudio.com/) <br>
 
 O repositório se encontra no seguinte endereço: https://github.com/ViniciusSTeixeira/API-HAMBURGUERIA
@@ -101,4 +101,4 @@ Foi adicionada as seguintes validações para os dados recebidos nas requisiçõ
 - O campo "cep" deverá receber 8 números<br>
 - O campo "numero" deverá receber somente numeros inteiros<br><br>
 
-<p><img src="./readme/burger-dance.gif" alt="hamburger-dance-Gif" width=""></p>
+<p align="center"><img src="./readme/burger-dance.gif" alt="hamburger-dance-Gif" width=""></p>
