@@ -5,7 +5,7 @@
   <h1 align="center">API REST - HAMBURGUERIA</h>
  <br/>
   <p align="center">Sumário<p align="center">
-  <a href="#pré-requisitos">pré-requisitos</a> |
+  <a href="#pré-requisitos">Pré-requisitos</a> |
   <a href="#sobre"> Sobre </a> |
   <a href="#conhecimentos-praticados"> Conhecimentos praticados </a> |
   <a href="#rotas-da-aplicação"> Rotas da aplicação </a> |
