@@ -6,7 +6,7 @@
 
 
 
-  <h1 align="center">API REST - HAMBURGUERIA</h>
+  <h1 align="center">API REST - HAMBURGUERIA</h1>
  <br/>
   <p align="center">Sumário<p align="center">
   <a href="#pré-requisitos">Pré-requisitos</a> |
