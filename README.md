@@ -76,7 +76,7 @@ ________________________________________________________________________________
 <b>[PUT] </b> /Endereco/:id - A rota atualizará um Endereço com as informações passadas no corpo da requisição<br>
 
 <h4>Observações:</h4>
- ✔ Você poderar alterar o campo que achar necessário no endereço.
+ ✔ Você poderar alterar o campo que achar necessário no endereço.</b>
  ✔ O ID se encontra no arquivo (database.sqlite) ou será exibido quando efetuar um GET.
 
 ________________________________________________________________________________________________________________
