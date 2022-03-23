@@ -28,7 +28,7 @@ O repositório se encontra no seguinte endereço: https://github.com/ViniciusSTe
 
 # Sobre
 
-Projeto de fim de Módulo da RESILIA que tem como objetivo criar uma API REST Baseado em uma Hamburgueria
+Projeto de fim do 4º Módulo da RESILIA, que tem como objetivo criar uma API REST Baseado em uma Hamburgueria
 
 Nesta API poderemos: criar, listar, atualizar e deletar Endereços.
 
