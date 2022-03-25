@@ -6,6 +6,7 @@
  <br />
   <p align="center">SUMÁRIO<p align="center">
   <a href="#pré-requisitos">Pré-requisitos</a> |
+  <a href="#Passo-a-Passo">Passo a Passo</a> |
   <a href="#sobre"> Sobre </a> |
   <a href="#conhecimentos-praticados"> Conhecimentos praticados </a> |
   <a href="#rotas-da-aplicação"> Rotas da aplicação </a>       
@@ -24,7 +25,14 @@ Você precisará instalar em sua máquina as seguintes ferramentas: <br>
 ✔[Insomnia](https://insomnia.rest/download) <br>
 ✔[VSCode](https://code.visualstudio.com/) <br>
 
-O repositório se encontra no seguinte endereço: https://github.com/ViniciusSTeixeira/API-HAMBURGUERIA
+# Passo a Passo
+## no terminal digite os seguintes comandos:
+
+1 - git clone https://github.com/ViniciusSTeixeira/API-HAMBURGUERIA.git
+2 - npm install: Para instalar as dependencias necessárias para rodar o projeto
+3 - npm start: Para iniciar o Projeto
+
+npm install: No terminal após fazer o clone do projeto 
 
 # Sobre
 
