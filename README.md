@@ -32,8 +32,6 @@ Você precisará instalar em sua máquina as seguintes ferramentas: <br>
 2 - npm install: Para instalar as dependencias necessárias para rodar o projeto<br>
 3 - npm start: Para iniciar o Projeto<br>
 
-npm install: No terminal após fazer o clone do projeto 
-
 # Sobre
 
 Projeto de fim do 4º Módulo da RESILIA, que tem como objetivo criar uma API REST Baseado em uma Hamburgueria
