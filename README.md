@@ -28,9 +28,9 @@ Você precisará instalar em sua máquina as seguintes ferramentas: <br>
 # Passo a Passo
 ## no terminal digite os seguintes comandos:
 
-1 - git clone https://github.com/ViniciusSTeixeira/API-HAMBURGUERIA.git
-2 - npm install: Para instalar as dependencias necessárias para rodar o projeto
-3 - npm start: Para iniciar o Projeto
+1 - git clone https://github.com/ViniciusSTeixeira/API-HAMBURGUERIA.git<br>
+2 - npm install: Para instalar as dependencias necessárias para rodar o projeto<br>
+3 - npm start: Para iniciar o Projeto<br>
 
 npm install: No terminal após fazer o clone do projeto 
 
